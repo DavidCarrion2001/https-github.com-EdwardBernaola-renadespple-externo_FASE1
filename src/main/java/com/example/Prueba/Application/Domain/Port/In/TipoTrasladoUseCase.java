@@ -11,5 +11,5 @@ public interface TipoTrasladoUseCase {
     TipoTraslado save(TipoTraslado tipoTraslado);
     List<TipoTraslado>findAll();
     Optional<TipoTraslado>findByID(Integer id);
-    TipoTraslado update(Integer id, String descripcion, String usuario_modificador, ZonedDateTime fecha_modificacion);
+    //TipoTraslado update(Integer id, String descripcion, String usuario_modificador, ZonedDateTime fecha_modificacion);
 }

@@ -5,6 +5,7 @@ import com.example.Prueba.Application.Domain.Port.In.TipoTrasladoUseCase;
 import com.example.Prueba.Application.Domain.Port.Out.TipoTrasladoRepositoryport;
 import org.springframework.stereotype.Service;
 
+import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -33,8 +34,9 @@ public class TipoTrasladoService implements TipoTrasladoUseCase {
         return repository.findById(id);
     }
 
-    @Override
-    public TipoTraslado update(Integer id, String descripcion, String usuario_modificador) {
+    /*@Override
+    public TipoTraslado update(Integer id, String descripcion, String usuario_modificador, ZonedDateTime fecha_modificacion) {
         return null;
-    }
+    }*/
+
 }
