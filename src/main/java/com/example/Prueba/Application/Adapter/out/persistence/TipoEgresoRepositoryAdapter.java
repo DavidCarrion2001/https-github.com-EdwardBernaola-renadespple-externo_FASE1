@@ -30,7 +30,8 @@ public class TipoEgresoRepositoryAdapter implements TipoEgresoRepositoryport {
     }
 
     @Override
-    public Optional<TipoEgreso> findById(Integer id) {
+    public Optional<TipoEgreso> findById(Integer id)
+    {
         return repository.findById(id).map(this::ToDomain);
     }
 

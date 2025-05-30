@@ -32,4 +32,9 @@ public class TipoTrasladoService implements TipoTrasladoUseCase {
     public Optional<TipoTraslado> findByID(Integer id) {
         return repository.findById(id);
     }
+
+    @Override
+    public TipoTraslado update(Integer id, String descripcion, String usuario_modificador) {
+        return null;
+    }
 }
